@@ -38,7 +38,6 @@ app.use(upload());
 
 app.post('/api/admin/upload', (req, res) => {
   if (req.files) {
-    console.log(req.files);
     const { file } = req.files;
     const filename = file.name;
     console.log(filename);
